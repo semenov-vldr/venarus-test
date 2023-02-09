@@ -1,0 +1,98 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  @media (max-width: 768px)
+    top: initial
+    bottom: 0
+    background-color: #F9F9F9
+
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-height: 100px
+    @media (max-width: $width-mobile)
+      min-height: 75px
+    @media (max-width: 768px)
+      min-height: 50px
+
+  &__logo
+    position: relative
+    z-index: 11
+    img
+      height: 40px
+      @media (max-width: $width-mobile)
+        height: 30px
+      @media (max-width: 768px)
+        height: 20px
+
+  &__nav
+    display: flex
+    align-items: center
+    gap: 52px
+    @media (max-width: $width-mobile)
+      gap: 35px
+    @media (max-width: 768px)
+      gap: 16px
+
+
+  &__burger
+    position: relative
+    z-index: 11
+    cursor: pointer
+    svg path
+      transition: $transition
+    &.js-menu-active svg .line
+      opacity: 0
+      visibility: hidden
+    &.js-menu-active + .header__nav-menu
+      opacity: 1
+      visibility: visible
+    @media (max-width: $width-mobile)
+      & svg
+        width: 50px
+    @media (max-width: 768px)
+      & svg
+        width: 35px
+        height: 22px
+
+  &__nav-menu
+    position: fixed
+    z-index: 10
+    width: 100%
+    height: 100%
+    min-height: 768px
+    top: 0
+    left: 0
+    overflow-y: auto
+    overflow-x: hidden
+    background-color: #fff
+    display: flex
+    align-items: center
+    padding: 100px 150px
+    opacity: 0
+    visibility: hidden
+    transition: $transition
+    background-image: url('../img/menu-decor.svg')
+    background-size: cover
+    background-position: left
+    background-repeat: no-repeat
+
+  &__nav-list
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    gap: 70px
+
+  &__nav-link
+    font-weight: 500
+    white-space: nowrap
+    &:hover
+      color: $accent
+
+
+

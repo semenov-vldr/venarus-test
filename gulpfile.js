@@ -33,7 +33,7 @@ $.gulp.task(
       "style:dev",
       "script:libs:dev",
       "script:dev",
-      "script:json:dev"
+      "script:json:dev",
     )
   )
 );

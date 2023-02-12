@@ -40,10 +40,54 @@
         </div>
       </header>
       <main>
-        <section>
-          <h1>Hello world!</h1>
+        <section class="hero">
+          <div class="hero__container container">
+            <h1>Надежный <br> помощник <br> в лечении <br> варикоза</h1>
+            <div class="hero__slider hero-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slider__slide"><img src="./assets/img/hero/01.png"></div>
+                <div class="swiper-slide hero-slider__slide"><img src="./assets/img/hero/02.png"></div>
+                <div class="swiper-slide hero-slider__slide"><img src="./assets/img/hero/03.png"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </section>
+        <div class="disclaimer disclaimer--closing">
+          <div class="disclaimer__container container">
+            <p class="disclaimer__text">Имеются противопоказания, необходимо ознакомиться с&nbsp;инструкцией или получить консультацию специалиста</p>
+            <button class="disclaimer__close"></button>
+          </div>
+        </div>
+        <div class="marquee">
+          <div class="marquee__container" aria-hidden="true"><span class="marquee__item">получить скидку 10% >>></span><span class="marquee__item">получить скидку 10% >>></span><span class="marquee__item">получить скидку 10% >>></span><span class="marquee__item">получить скидку 10% >>></span></div>
+        </div>
+        <div class="advantages">
+          <div class="advantages__container container">
+            <ul class="advantages__list">
+              <li class="advantages__item"><img class="advantages__icon" src="./assets/img/advantages/efficiency.svg"><span class="advantages__text">Доказанная <br> эффективность</span></li>
+              <li class="advantages__item"><img class="advantages__icon" src="./assets/img/advantages/dosage.svg"><span class="advantages__text">Новая дозировка <br> 100 мг + 900 мг</span></li>
+              <li class="advantages__item"><img class="advantages__icon" src="./assets/img/advantages/convenience.svg"><span class="advantages__text">Удобный прием. <br> Одна таблетка в сутки*</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="disclaimer">
+          <div class="disclaimer__container container">
+            <p class="disclaimer__text">Имеются противопоказания, необходимо ознакомиться с&nbsp;инструкцией или получить консультацию специалиста</p>
+          </div>
+        </div>
       </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__col"><a class="footer__link" href="">Сообщить о нежелательном явлении</a></div>
+          <div class="footer__col"><a class="footer__link" href="">Условия пользования сайтом и файлами Cookies</a>
+            <div class="footer__contacts"><span class="footer__address">г. Москва, ул. Шаболовка, д. 31, стр. 11</span><span class="footer__tel">Телефон<a href="tel:+74955555555">+7 (495) 555-55-55</a></span></div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__social"><a class="footer__social-link" href=""><img src="./assets/img/icons/vk.svg"></a><a class="footer__social-link" href=""><img src="./assets/img/icons/ok.svg"></a></div><a class="footer__site-author site-author" href=""><img class="site-author__logo" src="./assets/img/icons/farm-logo.svg"><span class="site-author__name">Создание сайтов <br> Фарм-студия №1 в Рунете</span></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js" type="module"></script>

@@ -1,0 +1,31 @@
+.advantages
+  margin: 100px 0
+  @media (max-width: $width-mobile)
+    margin: 50px 0
+  @media (max-width: 768px)
+    margin: 30px 0
+
+  &__list
+    display: flex
+    align-items: center
+    gap: 48px
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: 768px)
+      gap: 32px
+
+  &__item
+    font-family: "Merriweather", sans-serif
+    display: flex
+    align-items: center
+    gap: 30px
+    color: #242424
+    @media (max-width: 768px)
+      font-size: 14px
+
+  &__icon
+    height: 60px
+    @media (max-width: $width-mobile)
+      height: 40px
+    @media (max-width: 768px)
+      height: 30px

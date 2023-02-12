@@ -1,0 +1,60 @@
+.disclaimer
+  background-color: #F9F9F9
+
+
+  &__container
+    padding: 30px 54px 15px
+    max-width: 1330px
+    @media (max-width: $width-mobile)
+      padding: 20px 48px 15px
+    @media (max-width: 768px)
+      padding: 16px 10px 8px
+
+  &__text
+    margin: 0 auto
+    @include fontSize(12, 34)
+    color: rgba(#242424, 0.7)
+    text-transform: uppercase
+    font-weight: 300
+
+  &.disclaimer--closing
+    border-radius: 18px
+    &.js-close
+      display: none
+
+
+    .disclaimer__container
+      position: relative
+
+    .disclaimer__text
+      @media (max-width: $width-mobile)
+        padding-right: 20px
+
+    .disclaimer__close
+      position: absolute
+      background-image: url('../img/icons/close.svg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      width: 25px
+      height: 25px
+      cursor: pointer
+      right: 0
+      top: 30px
+      @media (max-width: 1500px)
+        right: 50px
+      @media (max-width: $width-mobile)
+        width: 20px
+        height: 20px
+      @media (max-width: 768px)
+        width: 16px
+        height: 16px
+        right: 20px
+        top: 20px
+      @media (max-width: 480px)
+        width: 10px
+        height: 10px
+
+
+
+

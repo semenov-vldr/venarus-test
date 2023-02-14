@@ -1,0 +1,56 @@
+.about
+  margin-bottom: 160px
+
+  &__container
+    display: grid
+    gap: 30px
+    @media (min-width: 768px)
+      grid-template-columns: 260px 1fr
+
+
+  &__list
+    display: flex
+    flex-direction: column
+
+  &__item
+    padding: 30px 30px 30px 100px
+    display: grid
+    grid-template-columns: 134px 360px
+    align-items: center
+    gap: 60px
+    border-bottom: 1px solid $accent
+    &:nth-child(even)
+      grid-template-columns: 360px 134px
+      justify-content: flex-end
+      .about__item-desc
+        order: -1
+    &:first-child
+      border-top: 1px solid $accent
+    @media (max-width: $width-mobile)
+      grid-template-columns: 100px auto
+      padding: 26px
+      gap: 30px
+      &:nth-child(even)
+        grid-template-columns: auto 100px
+      svg
+        width: 100px
+        height: 100px
+    @media (max-width: 768px)
+      grid-template-columns: 70px auto
+      padding: 16px
+      &:nth-child(even)
+        grid-template-columns: 70px auto
+        .about__item-desc
+          order: 0
+      svg
+        width: 70px
+        height: 70px
+
+
+  &__item-desc
+    @include fontSize(18, 30)
+    font-weight: 300
+
+
+
+

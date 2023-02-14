@@ -111,9 +111,6 @@ main
 
 
 
-
-
-
 .flex-center
   display: flex
   align-items: center
@@ -129,6 +126,41 @@ main
     display: none
 
 
+
+
+.info-hover
+  position: absolute
+  background-image: url("../img/icons/info.svg")
+  background-position: center
+  background-size: cover
+  width: 30px
+  height: 30px
+  cursor: pointer
+  right: -10px
+  bottom: 5px
+  transform: translateX(100%)
+  &:hover .info-text
+    opacity: 1
+    visibility: visible
+
+.info-text
+  left: 50%
+  top: -10px
+  transform: translate(-50%, -100%)
+  position: absolute
+  width: fit-content
+  min-width: 100px
+  max-width: 300px
+  background-color: #fff
+  border-radius: 4px
+  padding: 5px 10px
+  color: $accent
+  font-size: 12px
+  border: 1px solid $accent
+  text-align: center
+  transition: $transition
+  opacity: 0
+  visibility: hidden
 
 
 // -------- Swiper -----------

@@ -1,4 +1,4 @@
-.opinion
+section.opinion
   .opinion__container.container
     .opinion__header
       h2.title-section Мнение специалистов
@@ -9,13 +9,17 @@
       .swiper.opinion__slider
         .swiper-wrapper
           .swiper-slide
-            //img(src="https://bugaga.ru/uploads/posts/2017-11/1511793671_syurrealizm-erika-dzhonsona-24.jpg")
-            video.hero__video(preload='auto' muted loop src='./assets/video/review.mp4' playsinline)
-            a.button-video(data-src="./assets/video/review.mp4" data-fancybox) open video
+            video.hero__video(preload='auto' muted loop src='./assets/video/01.mp4')
+            a.button-video(data-src="./assets/video/01.mp4" data-fancybox)
+              img(src="./assets/img/icons/play.svg")
           .swiper-slide
-            img(src="https://mtdata.ru/u18/photoCD0B/20726453099-0/original.jpeg")
+            video.hero__video(preload='auto' muted loop src='./assets/video/02.mp4')
+            a.button-video(data-src="./assets/video/02.mp4" data-fancybox)
+              img(src="./assets/img/icons/play.svg")
           .swiper-slide
-            img(src="https://cdn.fishki.net/upload/post/2020/05/30/3330754/dbc4f19e614219af50d8ef943e8e80d6.jpg")
+            video.hero__video(preload='auto' muted loop src='./assets/video/03.mp4')
+            a.button-video(data-src="./assets/video/03.mp4" data-fancybox)
+              img(src="./assets/img/icons/play.svg")
 
         .swiper-pagination
 

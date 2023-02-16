@@ -7,6 +7,20 @@
     @media (min-width: 768px)
       grid-template-columns: 260px 1fr
 
+  &__header
+    display: flex
+    flex-direction: column
+
+    h2
+      margin-bottom: 32px
+      @media (max-width: 768px)
+        margin-bottom: 24px
+
+    &-link
+      margin-top: 16px
+      @media (max-width: 768px)
+        margin-bottom: 12px
+
 
   &__list
     display: flex

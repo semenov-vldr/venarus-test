@@ -14,6 +14,11 @@ if (slider) {
       clickable: true
     },
 
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
+
     uniqueNavElements: true,
 
     slidesPerView: 1,

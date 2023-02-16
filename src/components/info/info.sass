@@ -1,0 +1,73 @@
+.info
+  margin-bottom: 160px
+
+  &__container
+    display: grid
+    gap: 30px
+    @media (min-width: 768px)
+      grid-template-columns: 260px 1fr
+
+  &__article-list
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 260px 165px
+    gap: 30px
+    @media (max-width: $width-mobile)
+      gap: 16px
+    @media (max-width: 768px)
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(2, 150px)
+      grid-auto-rows: 150px
+    @media (max-width: 480px)
+      grid-template-columns: 1fr
+      grid-template-rows: 120px
+      grid-auto-rows: 120px
+
+  &__article-item
+    position: relative
+    background-color: $accent-dark
+    border-radius: 18px
+    padding: 24px 20px
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    overflow: hidden
+    @media (max-width: 768px)
+      grid-row: span 1
+      grid-column: span 1
+
+    &:first-child
+      grid-row: 1/3
+      @media (max-width: 768px)
+        grid-row: span 1
+        grid-column: span 1
+    &:nth-child(4)
+      grid-column: span 2
+      @media (max-width: 768px)
+        grid-row: span 1
+        grid-column: span 1
+    &::after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%)
+    &--bg-accent
+      &::after
+        display: none
+
+  &__article-item-title
+    position: relative
+    z-index: 1
+    color: #fff
+    @include fontSize(20, 36)
+    font-weight: 300
+    line-height: 1.1
+
+  &__button
+    margin-top: 36px
+    @media (min-width: 768px)
+      margin-left: auto
+
